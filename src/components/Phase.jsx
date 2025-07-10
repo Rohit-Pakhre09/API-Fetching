@@ -18,7 +18,6 @@ function Phase() {
         );
         setData(res.data);
         setLoading(false);
-        console.log(`API Called ${count} time.`);
       } catch (e) {
         console.error(e);
         setError(true);
@@ -75,7 +74,7 @@ function Phase() {
                 className="bg-white p-5 rounded-md shadow mb-4 max-w-full cursor-pointer transition duration-200 ease-in hover:shadow-blue-700"
               >
                 <p>
-                  <span className="font-medium">{el.id}. Title:</span>{" "}
+                  <span className="font-medium">{el.id}. Title:</span>
                   {el.title}
                 </p>
                 <p>
